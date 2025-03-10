@@ -1,6 +1,6 @@
 +++
 date = '2025-02-21T10:18:18-08:00'
-draft = true
+draft = false
 [params]
 disableAutoOrdering = true
 title = 'Practica0: Markdown, git & Hugo'
