@@ -1,6 +1,6 @@
 +++
 date = '2025-02-21T10:18:18-08:00'
-draft = false
+draft = true
 title = 'Practica0: Markdown, git & Hugo'
 +++
 <!--Comentario xd-->
@@ -34,6 +34,8 @@ Existen diversas formas de hacerlo, pero a veces, el sistema puede detectar cier
 
 El resultado más obvio, fue el archivo que se esta visualizando en este momento, usando el formato de Markdown y presentarlo usando la herramienta de Hugo, toda la estructura de este sitio está hecha por medio del uso de markdown.
 
+---
+
 ## Sesión 2: Uso de Git y Github
 
 En esta sesion, aprendimos a utilizar un sistema de control de versiones llamado Git, lo cual nos permite tener un buen control del desarrollo de nuestros proyectos, teniendo control de todas las versiones que se han guardado.
@@ -52,6 +54,17 @@ Entre otros comandos más, todo esto pudimos visualizarlo desde nuestro perfil d
 
 ![commits](./images/commits.jpg "commits realizados")
 
+---
+
 ## Sesión 3: Creación de páginas estáticas
 
-En esta sesion, aprendimos a utilizar un generador de sitios web llamado _Hugo_, el cual nos permite crear páginas web estáticas de manera rápida y sencilla, usando los conocimientos posteriores de markdown y git. De igual manera, implementamos el uso de Github Actions, para automatizar el proceso de creación de nuestro sitio web y visualizar las diversas versiones de la misma.
+En esta sesion, aprendimos a utilizar un generador de sitios web llamado _Hugo_, el cual nos permite crear páginas web estáticas de manera rápida y sencilla, usando los conocimientos posteriores de markdown y git. 
+
+![HugoLogo](image.png "logotipo de Hugo")
+
+De igual manera, implementamos el uso de Github Actions, para automatizar el proceso de creación de nuestro sitio web y visualizar las diversas versiones de la misma.
+
+![githubActions](./images/GitHubActions.jpg "Github Actions")
+
+Cada que haciamos uso de los comandos de git bash para poder subir nuestras modificaciones al repositorio en GitHub, los commit y push se podian visualizar mejor desde esta sección.
+Asi mismo, GitHub Actions nos permitia manejar una clase de "hosteo" para nuestro sitio, permitiendo publicar nuestro portafolio en la Web.
