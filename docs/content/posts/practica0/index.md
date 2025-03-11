@@ -1,6 +1,6 @@
 +++
 date = '2025-02-21T10:18:18-08:00'
-draft = true
+draft = false
 title = 'Practica0: Markdown, git & Hugo'
 +++
 <!--Comentario xd-->
@@ -39,7 +39,7 @@ El resultado más obvio, fue el archivo que se esta visualizando en este momento
 En esta sesion, aprendimos a utilizar un sistema de control de versiones llamado Git, lo cual nos permite tener un buen control del desarrollo de nuestros proyectos, teniendo control de todas las versiones que se han guardado.
 Aprendimos a usar la terminal de Git Bash, para poder realizar las acciones que queriamos realizar en nuestro proyecto, como agregar, eliminar y actualizar nuestro proyecto, visualizando las versiones que haciamos en cada momento que guardabamos.
 
-![git bash]("")
+![git bash](./images/terminal_gitbash.jpg "Uso de la terminal de Git Bash")
 
 Así mismo, aprendimos a utilizar Github, una plataforma en línea que nos permite subir nuestros proyectos a la nube y compartirlos con otros, creando repositorios para cada uno de esos.
 Desde la terminal de Git Bash, hemos podido realizar acciones como:
