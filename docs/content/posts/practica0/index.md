@@ -5,7 +5,7 @@ title = 'Practica0: Markdown, git & Hugo'
 +++
 <!--Comentario xd-->
 
-## Indice
+## Indice xd
 
 1. [Introducción](#introducción)
 2. [Introducción a Markdown](#sesión-1-introducción-a-markdown)
