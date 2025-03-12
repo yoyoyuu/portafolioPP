@@ -58,7 +58,7 @@ Entre otros comandos más, todo esto pudimos visualizarlo desde nuestro perfil d
 
 ## Sesión 3: Creación de páginas estáticas
 
-En esta sesion, aprendimos a utilizar un generador de sitios web llamado _Hugo_, el cual nos permite crear páginas web estáticas de manera rápida y sencilla, usando los conocimientos posteriores de markdown y git. 
+En esta sesion, aprendimos a utilizar un generador de sitios web llamado _Hugo_, el cual nos permite crear páginas web estáticas de manera rápida y sencilla, usando los conocimientos posteriores de markdown y git.
 
 ![HugoLogo](image.png "logotipo de Hugo")
 
