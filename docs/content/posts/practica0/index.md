@@ -47,10 +47,20 @@ Así mismo, aprendimos a utilizar Github, una plataforma en línea que nos permi
 Desde la terminal de Git Bash, hemos podido realizar acciones como:
 
 - `git add .` para agregar todos los cambios realizados en el proyecto.
-- `git commit -m "commit message"` para guardar los cambios con un mensaje descriptivo.
+- `git commit -m "mensaje_del_commit"` para guardar los cambios con un mensaje descriptivo.
 - `git push origin master` para subir los cambios a Github.
 
-Entre otros comandos más, todo esto pudimos visualizarlo desde nuestro perfil de Github. Donde tenemos un repositorio dedicado a este proyecto.
+Asi mismo, existen otros comandos que se usan comunmente al usar Git y Github, por ejemplo:
+
+- `git status` para ver el estado de los cambios realizados en el proyecto.
+- `git log` para ver el historial de commits realizados en el repositorio.
+- `git pull origin master` para descargar los cambios de Github al repositorio local.
+- `git branch nombre_de_la_rama` para crear una nueva rama.
+- `git checkout nombre_de_la_rama` para cambiar de rama.
+- `git merge nombre_de_la_rama` para mezclar los cambios de una rama con la actual.
+- `git remote add origin https://github.com/usuario/repositorio.git` para agregar un repositorio remoto.
+
+Los cambios,  visualizarlo desde nuestro perfil de Github. Donde tenemos un repositorio dedicado a este proyecto.
 
 ![commits](./images/commits.jpg "commits realizados")
 
