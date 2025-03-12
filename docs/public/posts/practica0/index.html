@@ -29,18 +29,21 @@
 
 Introducción
 Introducción a Markdown
+
+Encabezados
+Textos
+Listas
+Enlaces e imagenes
+Código
+Extras
+
+
 Uso de Git y Github
 Creación de páginas estáticas
 
 Introducción
 Durante el desarrollo de esta practica, nos adentramos en diversos temas relacionados al desarrollo de paginas web, con el proposito de crear la base de lo que seria nuestro portafolio para la materia de paradigmas de la programación.
-El desarrollo de esta practica se dividió en 3 sesiones:
-
-Introducción a Markdown
-Uso de Git y GitHub
-Creación de páginas estáticas
-
-Ahora, entraremos más a detalle en cada una de estas sesiones." />
+El desarrollo de esta practica se dividió en 3 sesiones:" />
   <meta name="author" content="My New Hugo Site" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
   
@@ -147,7 +150,16 @@ Ahora, entraremos más a detalle en cada una de estas sesiones." />
   <section><h2 id="indice">Indice</h2>
 <ol>
 <li><a href="#introducci%C3%B3n">Introducción</a></li>
-<li><a href="#sesi%C3%B3n-1-introducci%C3%B3n-a-markdown">Introducción a Markdown</a></li>
+<li><a href="#sesi%C3%B3n-1-introducci%C3%B3n-a-markdown">Introducción a Markdown</a>
+<ol>
+<li><a href="#encabezados">Encabezados</a></li>
+<li><a href="#textos">Textos</a></li>
+<li><a href="#listas">Listas</a></li>
+<li><a href="#enlaces-e-imagenes">Enlaces e imagenes</a></li>
+<li><a href="#c%C3%B3digo">Código</a></li>
+<li><a href="#extras">Extras</a></li>
+</ol>
+</li>
 <li><a href="#sesi%C3%B3n-2-uso-de-git-y-github">Uso de Git y Github</a></li>
 <li><a href="#sesi%C3%B3n-3-creaci%C3%B3n-de-p%C3%A1ginas-est%C3%A1ticas">Creación de páginas estáticas</a></li>
 </ol>
@@ -162,9 +174,157 @@ El desarrollo de esta practica se dividió en 3 sesiones:</p>
 <p>Ahora, entraremos más a detalle en cada una de estas sesiones.</p>
 <hr>
 <h2 id="sesión-1-introducción-a-markdown">Sesión 1: Introducción a Markdown</h2>
-<p>En esta sesion, aprendimos a utilizar un lenguaje de marcado ligero, el cual nos permite crear textos con formato sin necesidad de utilizar HTML, con una estructura básica y fácil de leer. Aprendimos a hacer uso de los diferentes elementos que ofrece markdown, como títulos, listas, enlaces, etc.</p>
-<p>Uno de los resultados que queriamos obtener al realizar esta practica, era aprender a usar los distintos tipos de formatos que le podemos dar a un texto y como los podemos implementar al momento de usarlos, para que puedan ser visualizados de manera clara y concisa.
-Existen diversas formas de hacerlo, pero a veces, el sistema puede detectar ciertos &ldquo;errores&rdquo; los cuales se muestran con una linea amarilla debajo del texto. Aunque no te detienen de usarlas y estas se pueden visualizar, es recomendable seguir las normas que este lenguaje nos proporciona.</p>
+<p>Uno de los resultados que queriamos obtener al realizar esta practica, era aprender a usar los distintos tipos de formatos que le podemos dar a un texto y como los podemos implementar al momento de usarlos, para que puedan ser visualizados de manera clara y concisa. Existen diversas formas de hacerlo, pero a veces, el sistema puede detectar ciertos &ldquo;errores&rdquo; los cuales se muestran con una linea amarilla debajo del texto.
+Aunque no te detienen de usarlas y estas se pueden visualizar, es recomendable seguir las normas que este lenguaje nos proporciona.
+A continuación, se muestran los formatos que aprendimos:</p>
+<ul>
+<li>
+<h3 id="encabezados">Encabezados</h3>
+</li>
+</ul>
+<p>En primera instancia, hicimos uso de los títulos, los cuales nos permiten darle un encabezado a nuestro texto, la forma en que las diferenciamos dependia de cuantos # implementabamos en cada uno de los encabezados, siendo el de un # el que siempre debe estar en la parte superior de la pagina.</p>
+<p>En total, tenemos 5 maneras de implementar encabezados:</p>
+<h1 id="encabezado-con-1-hashtag">Encabezado con 1 hashtag</h1>
+<h2 id="encabezado-con-2-hashtag">Encabezado con 2 hashtag</h2>
+<h3 id="encabezado-con-3-hashtag">Encabezado con 3 hashtag</h3>
+<h4 id="encabezado-con-4-hashtag">Encabezado con 4 hashtag</h4>
+<h5 id="encabezado-con-5-hashtag">Encabezado con 5 hashtag</h5>
+<ul>
+<li>
+<h3 id="textos">Textos</h3>
+</li>
+</ul>
+<p>Pasamos a darle formato al texto, basado en los diferentes tipos de formato que podemos implementar en un texto sencillo:</p>
+<p><em>intalica</em>: usando asteriscos al inicio y al final del texto.</p>
+<p><em>intalica</em> usando guiones bajos al inicio y al final del texto.</p>
+<p><strong>negrita</strong> usando doble asterisco al inicio y al final del texto.</p>
+<p><strong>negrita</strong> usando doble guion bajo al inicio y al final del texto.</p>
+<p><del>tachado</del> usando doble tilde al inicio y al final del texto.</p>
+<p><!-- raw HTML omitted -->subrayado<!-- raw HTML omitted --> usando etiquetas HTML.</p>
+<blockquote>
+<p>Notese que el formato de subrayado no se proyecta en el sitio, esto se debe a que Markdown no soporta este tipo de formato para textos. Aqui se usa el formato para .HTML, pero como estamos trabajando con un archivo .md, el sitio no lo visualizará.</p></blockquote>
+<ul>
+<li>
+<h3 id="listas">Listas</h3>
+</li>
+</ul>
+<p>La forma en que implementamos las listas no es tan diferente a como lo hacemos con un editor de texto promedio (word, docs, etc.).
+Se dividen en dos tipos:</p>
+<p><strong>Listas ordenadas:</strong> donde se le asigna un número a cada elemento de la lista.</p>
+<ol>
+<li>Elemento 1</li>
+<li>Elemento 2</li>
+<li>Elemento 3
+<ol>
+<li>Elemento 3.1</li>
+<li>Elemento 3.2
+<ol>
+<li>Elemento 3.2.1</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Elemento 4</li>
+</ol>
+<p><strong>Listas desordenadas:</strong> donde se utiliza un asterisco para indicar que es un elemento de la lista.</p>
+<ul>
+<li>Elemento 1</li>
+<li>Elemento 2</li>
+<li>Elemento 3
+<ul>
+<li>Elemento 3.1</li>
+<li>Elemento 3.2</li>
+<li>Elemento 3.3
+<ul>
+<li>Elemento 3.3.1</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Elemento 4</li>
+</ul>
+<p>Basta con hacer uso de tabulación para poder implementar subsecciones en cada lista.</p>
+<ul>
+<li>
+<h3 id="enlaces-e-imagenes">Enlaces e imagenes</h3>
+</li>
+</ul>
+<p>Markdown nos permite implementar enlaces e imagenes de forma sencilla, siguen un formato similar, pero con algunas diferencias. Ambos nos permiten agregar texto alternativo que podemos visualizar al pasar nuestro cursor por encima de dicho enlace o imagen.</p>
+<p>Ambos requieren de un enlace que les permita redirigir a otra página o para poder acceder a la imagen, aunque tambien podemos implementar imagenes de forma local accediendo a la ruta de dicha imagen.</p>
+<p>De igual forma, las imagenes tambien nos permiten asignarles algun enlace donde, al hacer clic en la imagen, nos redirigirá a la página que queramos.</p>
+<ul>
+<li>
+<p><a href="https://www.google.com" title="Google">Google</a></p>
+</li>
+<li>
+<p><a href="https://www.uabc.mx" title="Sitio web de la UABC">UABC</a></p>
+</li>
+</ul>
+<hr>
+<blockquote>
+<p>La imagen a continuación fue obtenida desde internet, obteniendo la ruta de la imagen donde fue publicada.</p></blockquote>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0_ear064_VdErk_OFXT3SzT8pC_MNBp2eqiLwVElzPU3lhLLfF3tjaSg&amp;s" alt="Aoyamagod" title="Aoyamagod"></p>
+<blockquote>
+<p>La imagen a continuación fue asignada de forma local, tiene un enlace a google.</p></blockquote>
+<p><a href="https://www.google.com"><img src="./images/ekisde.jpg" alt="Nose"></a></p>
+<ul>
+<li>
+<h3 id="código">Código</h3>
+</li>
+</ul>
+<p>Markdown nos permite implementar código de forma sencilla, usando dos comillas sencillas para una sola parte de un texto, o 3 pares de comillas sencillas entre texto, el cual representará dicho código.</p>
+<p>Podemos especificar que tipo de formato o lenguaje usará el texto dentro de los pares de 3 comillas, escribiendo el nombre del formato en la mimsa linea y despues de las primeras 3 comillas simples.</p>
+<p>El codigo obtendrá el formato que le hayamos asignado:</p>
+<p><code>Simple linea de texto, usando dos comillas al inicio y al final.</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Texto en formato .txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;formato .py&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;formato .c&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span>&gt;formato .html&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span></code></pre></div><ul>
+<li>
+<h3 id="extras">Extras</h3>
+</li>
+</ul>
+<p>En Markdown podemos implementar otros elementos adicionales, que nos permitiran hacer nuestro texto más atractivo y fácil de leer. Algunos de estos elementos son:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Columna 1</th>
+          <th>Columna 2</th>
+          <th>Columna 3</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Elemento 1</td>
+          <td>Elemento 2</td>
+          <td>Elemento 3</td>
+      </tr>
+      <tr>
+          <td>Elemento 4</td>
+          <td>Elemento 5</td>
+          <td>Elemento 6</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p>Esto es una nota</p></blockquote>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Primera tarea</li>
+<li><input disabled="" type="checkbox"> Segunda tarea</li>
+<li><input checked="" disabled="" type="checkbox"> Tercera tarea</li>
+<li><input disabled="" type="checkbox"> Cuarta tarea</li>
+</ul>
+<hr>
+<hr>
+<hr>
 <p>El resultado más obvio, fue el archivo que se esta visualizando en este momento, usando el formato de Markdown y presentarlo usando la herramienta de Hugo, toda la estructura de este sitio está hecha por medio del uso de markdown.</p>
 <hr>
 <h2 id="sesión-2-uso-de-git-y-github">Sesión 2: Uso de Git y Github</h2>
@@ -196,8 +356,7 @@ Desde la terminal de Git Bash, hemos podido realizar acciones como:</p>
 <p><img src="image.png" alt="HugoLogo" title="logotipo de Hugo"></p>
 <p>De igual manera, implementamos el uso de Github Actions, para automatizar el proceso de creación de nuestro sitio web y visualizar las diversas versiones de la misma.</p>
 <p><img src="./images/GitHubActions.jpg" alt="githubActions" title="Github Actions"></p>
-<p>Cada que haciamos uso de los comandos de git bash para poder subir nuestras modificaciones al repositorio en GitHub, los commit y push se podian visualizar mejor desde esta sección.
-Asi mismo, GitHub Actions nos permitia manejar una clase de &ldquo;hosteo&rdquo; para nuestro sitio, permitiendo publicar nuestro portafolio en la Web.</p>
+<p>GitHub Actions es una herramienta de automatización que nos permite definir flujos de trabajo personalizados para nuestras aplicaciones. Esto es especialmente útil cuando usamos Hugo, ya que pude configurar un flujo de trabajo que automáticamente me construia y desplegaba el sitio web cada vez que hacia cambios en el repositorio. Además, con GitHub Pages, podemos publicar nuestro sitio directamente desde el repositorio, haciendo que el proceso de desarrollo y despliegue sea mucho más eficiente.</p>
 </section>
 
   <nav
