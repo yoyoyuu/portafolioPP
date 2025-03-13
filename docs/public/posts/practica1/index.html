@@ -20,12 +20,19 @@
   />
 
   
-  <title>Practica1-My New Hugo Site</title>
+  <title>Practica1: elementos básicos de los lenguajes de programación-My New Hugo Site</title>
 
   
   <meta name="theme-color" />
 
-  <meta name="description" content="" />
+  <meta name="description" content="Fecha: 12 de marzo de 2025
+Materia: Paradigmas de la Programación
+
+Introducción
+En esta practica, analizaremos un programa en C que se nos proporcionó, desglosando los elementos esenciales de los lenguajes de programación. Se identificarán los componentes clave como identificadores, objetos, entornos, bloques, alcance, administración de memoria y estructuras de control. Además, se analizará cómo se maneja la memoria dinámica, estática y automática dentro del programa.
+Análisis
+1. Nombres (Identificadores)
+Los identificadores son nombres utilizados para variables, funciones y constantes en el código. En este programa, algunos ejemplos son:" />
   <meta name="author" content="My New Hugo Site" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
   
@@ -127,9 +134,168 @@
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
     ><article>
   <header class="mb-14">
-    <h1 class="!my-0 pb-2.5">Practica1</h1><div class="text-xs antialiased opacity-60"><time>Feb 21, 2025</time></div></header>
+    <h1 class="!my-0 pb-2.5">Practica1: elementos básicos de los lenguajes de programación</h1><div class="text-xs antialiased opacity-60"><time>Feb 21, 2025</time></div></header>
 
-  <section></section>
+  <section><p><strong>Fecha:</strong> 12 de marzo de 2025<br>
+<strong>Materia:</strong> Paradigmas de la Programación</p>
+<hr>
+<h2 id="introducción"><strong>Introducción</strong></h2>
+<p>En esta practica, analizaremos un programa en C que se nos proporcionó, desglosando los elementos esenciales de los lenguajes de programación. Se identificarán los componentes clave como identificadores, objetos, entornos, bloques, alcance, administración de memoria y estructuras de control. Además, se analizará cómo se maneja la memoria dinámica, estática y automática dentro del programa.</p>
+<h2 id="análisis"><strong>Análisis</strong></h2>
+<h3 id="1-nombres-identificadores"><strong>1. Nombres (Identificadores)</strong></h3>
+<p>Los identificadores son nombres utilizados para variables, funciones y constantes en el código. En este programa, algunos ejemplos son:</p>
+<ul>
+<li><strong>Variables:</strong> <code>library</code>, <code>members</code>, <code>bookCount</code>, <code>memberCount</code>.</li>
+<li><strong>Funciones:</strong> <code>addBook</code>, <code>displayBooks</code>, <code>saveLibraryToFile</code>, <code>loadLibraryFromFile</code>.</li>
+<li><strong>Constantes:</strong> <code>FICTION</code>, <code>NON_FICTION</code>, <code>SCIENCE</code>, <code>HISTORY</code>, <code>FANTASY</code>, <code>BIOGRAPHY</code>, <code>OTHER</code>.</li>
+</ul>
+<p>Tambien tenemos otras secciones dentro del programa:</p>
+<ul>
+<li>
+<p><strong>MEMORY_MANAGEMENT_H</strong>
+Es un nombre de archivo de cabecera utilizado para evitar la inclusión múltiple del archivo.</p>
+</li>
+<li>
+<p><strong>MEMORY_MANAGEMENT_DISPLAY</strong>
+Es una macro de preprocesador utilizada para controlar si se debe mostrar la información sobre el uso de memoria.</p>
+</li>
+<li>
+<p><strong>heap_allocations</strong>
+Son variables externas que almacenan contadores de las asignaciones y liberaciones de memoria en el heap y la pila.</p>
+</li>
+</ul>
+<p>Estos identificadores hacen que el código sea más comprensible al describir claramente su propósito.</p>
+<h3 id="2-objetos"><strong>2. Objetos</strong></h3>
+<p>Un objeto en C es una región de memoria con un tipo de datos. En este programa:</p>
+<ul>
+<li><strong>Estructuras:</strong> <code>book_t</code> y <code>member_t</code> almacenan información sobre libros y miembros, respectivamente.</li>
+<li><strong>Punteros:</strong> Se utilizan para gestionar memoria dinámica, como <code>book_t *library</code>.</li>
+<li><strong>Archivos:</strong> <code>FILE *</code> se emplea para manejar la lectura y escritura de datos en archivos.</li>
+</ul>
+<h3 id="3-entornos"><strong>3. Entornos</strong></h3>
+<p>El entorno de ejecución del programa contiene variables con distintos ámbitos:</p>
+<ul>
+<li><strong>Globales:</strong> Variables como <code>heap_allocations</code> y <code>stack_allocations</code> permiten gestionar la memoria en todo el programa.</li>
+<li><strong>Locales:</strong> Variables definidas dentro de funciones como <code>choice</code> en <code>main</code> solo existen dentro de su bloque.</li>
+<li><strong>Segmento de memoria:</strong> Secciones como BSS almacenan variables no inicializadas.</li>
+</ul>
+<h3 id="4-bloques"><strong>4. Bloques</strong></h3>
+<p>Los bloques en C se definen con llaves <code>{}</code> y delimitan secciones de código:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">addBook</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">**</span>library, <span style="color:#66d9ef">int</span><span style="color:#f92672">*</span> count) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Código de la función
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>Estos bloques organizan el programa y definen el ámbito de las variables.</p>
+<h3 id="5-alcance-scope"><strong>5. Alcance (Scope)</strong></h3>
+<p>El alcance define la visibilidad de las variables:</p>
+<ul>
+<li><strong>Global:</strong> Variables accesibles en todo el programa, como <code>heap_allocations</code>.</li>
+<li><strong>Local:</strong> Variables dentro de funciones, como <code>bookID</code> en <code>findBookById</code>.</li>
+</ul>
+<h3 id="6-administración-de-memoria"><strong>6. Administración de Memoria</strong></h3>
+<p>El programa maneja tres tipos principales de memoria:</p>
+<h4 id="memoria-estática"><strong>Memoria Estática</strong></h4>
+<ul>
+<li>Se asigna en tiempo de compilación y persiste durante toda la ejecución del programa.</li>
+<li><strong>Ejemplo:</strong> <code>static int static_var = 0;</code> se almacena en el segmento de datos.</li>
+<li>Se usa en variables globales como <code>heap_allocations</code> y <code>stack_allocations</code> dentro de <code>memory_management.c</code>.</li>
+</ul>
+<h4 id="memoria-automática"><strong>Memoria Automática</strong></h4>
+<ul>
+<li>Se asigna en el <strong>stack</strong> y se libera automáticamente al salir del bloque de código donde se declaró.</li>
+<li><strong>Ejemplo:</strong> En <code>main()</code>, variables como <code>bookCount</code>, <code>memberCount</code> y <code>choice</code> son automáticas.</li>
+</ul>
+<h4 id="memoria-dinámica"><strong>Memoria Dinámica</strong></h4>
+<ul>
+<li>Se gestiona manualmente con <code>malloc</code>, <code>realloc</code> y <code>free</code> y se almacena en el <strong>heap</strong>.</li>
+<li><strong>Funciones que la usan:</strong>
+<ul>
+<li>
+<p><code>addBook()</code> asigna memoria a un nuevo libro:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>new_book <span style="color:#f92672">=</span> (<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>)<span style="color:#a6e22e">malloc</span>(<span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">book_t</span>));
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">incrementHeapAllocations</span>(new_book, <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">book_t</span>));
+</span></span></code></pre></div></li>
+<li>
+<p><code>addMember()</code> asigna memoria a un nuevo miembro.</p>
+</li>
+<li>
+<p><code>issueBook()</code> usa <code>realloc</code> para cambiar el tamaño de un arreglo dinámico.</p>
+</li>
+<li>
+<p><code>freeLibrary()</code> y <code>freeMembers()</code> liberan memoria previamente asignada.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Ejemplo de liberación de memoria:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">freeLibrary</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>current <span style="color:#f92672">=</span> library;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> (current) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>next <span style="color:#f92672">=</span> current<span style="color:#f92672">-&gt;</span>next;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">incrementHeapDeallocations</span>(current);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">free</span>(current);
+</span></span><span style="display:flex;"><span>        current <span style="color:#f92672">=</span> next;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">displayMemoryUsage</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="7-expresiones"><strong>7. Expresiones</strong></h3>
+<p>Las expresiones incluyen:</p>
+<ul>
+<li><strong>Comparaciones:</strong> <code>current-&gt;id == bookID</code></li>
+<li><strong>Asignaciones:</strong> <code>new_book-&gt;next = *library</code></li>
+<li><strong>Operaciones matemáticas:</strong> <code>bookFound-&gt;quantity--</code></li>
+</ul>
+<h3 id="8-comandos-sentencias"><strong>8. Comandos (Sentencias)</strong></h3>
+<p>Ejemplos de sentencias en el programa:</p>
+<ul>
+<li>Declaración: <code>int choice = 0;</code></li>
+<li>Llamadas a función: <code>addBook(&amp;library, &amp;bookCount);</code></li>
+<li>Retorno de función: <code>return 0;</code></li>
+</ul>
+<h3 id="9-secuencia"><strong>9. Secuencia</strong></h3>
+<p>El código sigue una ejecución secuencial, salvo por las estructuras de control que alteran el flujo.</p>
+<h3 id="10-selección-condicionales"><strong>10. Selección (Condicionales)</strong></h3>
+<p>El programa usa <code>if</code>, <code>else</code> y <code>switch</code> para la toma de decisiones. Ejemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">switch</span> (choice) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">addBook</span>(<span style="color:#f92672">&amp;</span>library, <span style="color:#f92672">&amp;</span>bookCount);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">displayBooks</span>(library);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="11-iteración-bucles"><strong>11. Iteración (Bucles)</strong></h3>
+<p>Los bucles <code>while</code> y <code>for</code> permiten repetir código:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> (current) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (current<span style="color:#f92672">-&gt;</span>id <span style="color:#f92672">==</span> bookID) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> current;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    current <span style="color:#f92672">=</span> current<span style="color:#f92672">-&gt;</span>next;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="12-recursión"><strong>12. Recursión</strong></h3>
+<p>Ejemplo de función recursiva para mostrar libros:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">displayBooksRecursive</span>(<span style="color:#66d9ef">book_t</span> <span style="color:#f92672">*</span>library) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>library) <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%s</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, library<span style="color:#f92672">-&gt;</span>title);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">displayBooksRecursive</span>(library<span style="color:#f92672">-&gt;</span>next);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="13-subprogramas-funciones"><strong>13. Subprogramas (Funciones)</strong></h3>
+<p>El código se divide en funciones, lo que mejora la organización y reutilización del código.</p>
+<h3 id="14-tipos-de-datos"><strong>14. Tipos de Datos</strong></h3>
+<p>El programa usa:</p>
+<ul>
+<li><strong>Primitivos:</strong> <code>int</code>, <code>char</code>, <code>size_t</code>.</li>
+<li><strong>Definidos por el usuario:</strong>
+<ul>
+<li><code>genre_t</code> - Enumeración de géneros de libros.</li>
+<li><code>book_t</code> y <code>member_t</code> - Estructuras para representar libros y miembros.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="conclusión"><strong>Conclusión</strong></h2>
+<p>El programa en C analizado maneja memoria de manera eficiente combinando memoria estática, automática y dinámica, lo que optimiza el rendimiento y la organización del código.</p>
+</section>
 
   <nav
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
