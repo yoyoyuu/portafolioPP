@@ -28,6 +28,8 @@ title = 'Practica1: elementos básicos de los lenguajes de programación'
 
 En esta practica, analizaremos un programa en C que se nos proporcionó, desglosando los elementos esenciales de los lenguajes de programación. Se identificarán los componentes clave como identificadores, objetos, entornos, bloques, alcance, administración de memoria y estructuras de control. Además, se analizará cómo se maneja la memoria dinámica, estática y automática dentro del programa.
 
+---
+
 ## **Análisis**
 
 ### **1. Nombres (Identificadores)**
