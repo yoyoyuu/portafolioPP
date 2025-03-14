@@ -1,4 +1,29 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Blog de Isis'
 theme = 'paper'
+
+[params]
+  # color style
+  color = 'wheat'                           # linen, wheat, gray, light
+
+  # header social icons
+  github = 'yoyoyuu'                
+
+  # home page profile
+  avatar = 'https://pbs.twimg.com/profile_images/1897109682898063360/biAElNY5_400x400.jpg'                 # gravatar email or image url
+  name = 'Isis Vanesa Lopez Cisneros'
+  bio = 'Estudiante de la Universidad Autónoma de Baja California (UABC), cursando la carrera de Ingenieria en Software y Tecnologías Emergentes.'
+
+
+  # misc
+  disableHLJS = true                        # disable highlight.js
+  disablePostNavigation = false              # disable post navigation
+  monoDarkIcon = false                       # show monochrome dark mode icon
+  gravatarCdn = 'GRAVATAR_CDN_LINK'         # e.g. 'https://cdn.v2ex.com/gravatar/'
+  math = true                               # enable KaTeX math typesetting globally
+  localKatex = false                        # use local KaTeX js/css instead of CDN
+  favicon = "https://imgs.search.brave.com/Lf8anUrkNC2wPF8vrkkSUnvuoDTekiYrWxMJbwhObxU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9zcGFya2xl/cy1lbW9qaS01MTJ4/NDkzLTB2a3loNDlo/LnBuZw"                   # customize the default favicon
+
+  # RTL supprot
+  direction = "ltr"                         # RTL support for Right-to-left languages

@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Blog de Isis</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on Blog de Isis</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Feb 2025 10:20:24 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 21 Feb 2025 10:20:06 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Practica3</title>
-      <link>http://localhost:1313/posts/practica3/</link>
-      <pubDate>Fri, 21 Feb 2025 10:20:24 -0800</pubDate>
-      <guid>http://localhost:1313/posts/practica3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Practica2</title>
-      <link>http://localhost:1313/posts/practica2/</link>
-      <pubDate>Fri, 21 Feb 2025 10:20:15 -0800</pubDate>
-      <guid>http://localhost:1313/posts/practica2/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Practica1: elementos básicos de los lenguajes de programación</title>
       <link>http://localhost:1313/posts/practica1/</link>
       <pubDate>Fri, 21 Feb 2025 10:20:06 -0800</pubDate>
       <guid>http://localhost:1313/posts/practica1/</guid>
       <description>&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#introducci%C3%B3n&#34;&gt;Introducción&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#an%C3%A1lisis&#34;&gt;Análisis&lt;/a&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#1-nombres-identificadores&#34;&gt;Identificadores&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2-objetos&#34;&gt;Objetos&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#3-entornos&#34;&gt;Entornos&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#4-bloques&#34;&gt;Bloques&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#5-alcance-scope&#34;&gt;Alcance&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#6-administraci%C3%B3n-de-memoria&#34;&gt;Administración de memoria&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#7-expresiones&#34;&gt;Expresiones&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#8-comandos-sentencias&#34;&gt;Comandos&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#9-secuencia&#34;&gt;Secuencia&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#10-selecci%C3%B3n-condicionales&#34;&gt;Condicionales&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#11-iteraci%C3%B3n-bucles&#34;&gt;Iteraciones&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#12-recursi%C3%B3n&#34;&gt;Recursión&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#13-subprogramas-funciones&#34;&gt;Funciones&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#14-tipos-de-datos&#34;&gt;Tipos de datos&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#conclusi%C3%B3n&#34;&gt;Conclusión&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;introducción&#34;&gt;&lt;strong&gt;Introducción&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;En esta practica, analizaremos un programa en C que se nos proporcionó, desglosando los elementos esenciales de los lenguajes de programación. Se identificarán los componentes clave como identificadores, objetos, entornos, bloques, alcance, administración de memoria y estructuras de control. Además, se analizará cómo se maneja la memoria dinámica, estática y automática dentro del programa.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Practica0: Markdown, git &amp; Hugo</title>
+      <link>http://localhost:1313/posts/practica0/</link>
+      <pubDate>Fri, 21 Feb 2025 10:18:18 -0800</pubDate>
+      <guid>http://localhost:1313/posts/practica0/</guid>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#introducci%C3%B3n&#34;&gt;Introducción&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#sesi%C3%B3n-1-introducci%C3%B3n-a-markdown&#34;&gt;Introducción a Markdown&lt;/a&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#encabezados&#34;&gt;Encabezados&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#textos&#34;&gt;Textos&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#listas&#34;&gt;Listas&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#enlaces-e-imagenes&#34;&gt;Enlaces e imagenes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#c%C3%B3digo&#34;&gt;Código&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#extras&#34;&gt;Extras&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#sesi%C3%B3n-2-uso-de-git-y-github&#34;&gt;Uso de Git y Github&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#sesi%C3%B3n-3-creaci%C3%B3n-de-p%C3%A1ginas-est%C3%A1ticas&#34;&gt;Creación de páginas estáticas&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;introducción&#34;&gt;&lt;strong&gt;Introducción&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Durante el desarrollo de esta practica, nos adentramos en diversos temas relacionados al desarrollo de paginas web, con el proposito de crear la base de lo que seria nuestro &lt;strong&gt;portafolio&lt;/strong&gt; para la materia de paradigmas de la programación.&#xA;El desarrollo de esta practica se dividió en 3 sesiones:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
