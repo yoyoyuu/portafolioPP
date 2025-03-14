@@ -1,5 +1,5 @@
 +++
-date = '2025-03-14T10:20:06-08:00'
+date = '2025-02-21T10:20:06-08:00'
 draft = false
 title = 'Practica1: elementos básicos de los lenguajes de programación'
 +++
