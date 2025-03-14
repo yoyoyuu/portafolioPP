@@ -1,11 +1,26 @@
 +++
-date = '2025-02-21T10:20:06-08:00'
+date = '2025-03-14T10:20:06-08:00'
 draft = false
 title = 'Practica1: elementos básicos de los lenguajes de programación'
 +++
 
-**Fecha:** 12 de marzo de 2025  
-**Materia:** Paradigmas de la Programación
+1. [Introducción](#introducción)
+2. [Análisis](#análisis)
+   1. [Identificadores](#1-nombres-identificadores)
+   2. [Objetos](#2-objetos)
+   3. [Entornos](#3-entornos)
+   4. [Bloques](#4-bloques)
+   5. [Alcance](#5-alcance-scope)
+   6. [Administración de memoria](#6-administración-de-memoria)
+   7. [Expresiones](#7-expresiones)
+   8. [Comandos](#8-comandos-sentencias)
+   9. [Secuencia](#9-secuencia)
+   10. [Condicionales](#10-selección-condicionales)
+   11. [Iteraciones](#11-iteración-bucles)
+   12. [Recursión](#12-recursión)
+   13. [Funciones](#13-subprogramas-funciones)
+   14. [Tipos de datos](#14-tipos-de-datos)
+3. [Conclusión](#conclusión)
 
 ---
 
@@ -194,4 +209,11 @@ El programa usa:
 
 ## **Conclusión**
 
-El programa en C analizado maneja memoria de manera eficiente combinando memoria estática, automática y dinámica, lo que optimiza el rendimiento y la organización del código.
+El programa en C analizado maneja memoria al combinar el uso de memoria estática, automática y dinámica, lo que optimiza el rendimiento y la organización del código. Usa tipos de datos conocidos e implementa funciones de manera correcta, permitiendome entender cómo se estructura un programa en C.
+
+---
+
+**Fecha:** 14 de marzo de 2025  
+**Materia:** Paradigmas de la Programación
+**Profesor:** M. I. Jose Carlos Gallegos Mariscal
+**Alumno:** Isis Vanesa Lopez Cisneros

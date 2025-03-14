@@ -1,5 +1,5 @@
 +++
-date = '2025-02-21T10:18:18-08:00'
+date = '2025-03-14T10:18:18-08:00'
 draft = false
 title = 'Practica0: Markdown, git & Hugo'
 +++
@@ -15,6 +15,8 @@ title = 'Practica0: Markdown, git & Hugo'
    6. [Extras](#extras)
 3. [Uso de Git y Github](#sesión-2-uso-de-git-y-github)
 4. [Creación de páginas estáticas](#sesión-3-creación-de-páginas-estáticas)
+
+---
 
 ## **Introducción**
 
@@ -230,3 +232,17 @@ De igual manera, implementamos el uso de Github Actions, para automatizar el pro
 ![githubActions](./images/GitHubActions.jpg "Github Actions")
 
 GitHub Actions es una herramienta de automatización que nos permite definir flujos de trabajo personalizados para nuestras aplicaciones. Esto es especialmente útil cuando usamos Hugo, ya que pude configurar un flujo de trabajo que automáticamente me construia y desplegaba el sitio web cada vez que hacia cambios en el repositorio. Además, con GitHub Pages, podemos publicar nuestro sitio directamente desde el repositorio, haciendo que el proceso de desarrollo y despliegue sea mucho más eficiente.
+
+---
+
+## **Conclusión**
+
+Durante estas sesiones, pudimos aprender de forma sencilla la forma en que se pueden crear sitios web estáticos, utilizando herramientas como Hugo y Markdown, y también aprendiendo a usar herramientas que nos proporciona el servicio de Git, como los repositorios, Github Actions y GitHub Pages.
+Todo esto , nos permite tener un control total de nuestro sitio web, y poder visualizarlo en cualquier momento.
+
+---
+
+**Fecha:** 14 de marzo de 2025  
+**Materia:** Paradigmas de la Programación
+**Profesor:** M. I. Jose Carlos Gallegos Mariscal
+**Alumno:** Isis Vanesa Lopez Cisneros
