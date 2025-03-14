@@ -34,7 +34,7 @@ En esta practica, analizaremos un programa en C que se nos proporcionó, desglos
 
 ### **1. Nombres (Identificadores)**
 
-Los identificadores son nombres utilizados para variables, funciones y constantes en el código. En este programa, algunos ejemplos son:
+Los identificadores son nombres usados para variables, funciones y constantes en el código. En este programa, algunos ejemplos son:
 
 - **Variables:** `library`, `members`, `bookCount`, `memberCount`.
 - **Funciones:** `addBook`, `displayBooks`, `saveLibraryToFile`, `loadLibraryFromFile`.
