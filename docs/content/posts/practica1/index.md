@@ -215,7 +215,8 @@ El programa en C analizado maneja memoria al combinar el uso de memoria estátic
 
 ---
 
-**Fecha:** 14 de marzo de 2025  
-**Materia:** Paradigmas de la Programación
-**Profesor:** M. I. Jose Carlos Gallegos Mariscal
-**Alumno:** Isis Vanesa Lopez Cisneros
+## **Referencias**
+
+- GeeksforGeeks. (s.f.). Memory Layout of C Programs. Recuperado de: https://www.geeksforgeeks.org/memory-layout-of-c-program/
+- TutorialsPoint. (s.f.). C Programming - Data Types. Recuperado de: https://www.tutorialspoint.com/cprogramming/c_data_types.htm
+- Delgado, H. (2020). Variables Locales y Globales en C - Diferencias y ejemplo. Recuperado de: https://disenowebakus.net/variables-locales-globales.php

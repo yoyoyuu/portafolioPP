@@ -13,7 +13,7 @@ theme = 'paper'
   # home page profile
   avatar = 'https://pbs.twimg.com/profile_images/1897109682898063360/biAElNY5_400x400.jpg'                 # gravatar email or image url
   name = 'Isis Vanesa Lopez Cisneros'
-  bio = 'Estudiante de la Universidad Autónoma de Baja California (UABC), cursando la carrera de Ingenieria en Software y Tecnologías Emergentes.'
+  bio = 'Estudiante de la Universidad Autónoma de Baja California (UABC), cursando la carrera de Ingenieria en Software y Tecnologías Emergentes. Portafolio de evidencias para la materia de "Paradigmas de la programación" Impartida por el M. I. Jose Carlos Gallegos Mariscal.'
 
 
   # misc

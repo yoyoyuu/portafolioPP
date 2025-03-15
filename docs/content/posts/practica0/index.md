@@ -241,8 +241,3 @@ Durante estas sesiones, pudimos aprender de forma sencilla la forma en que se pu
 Todo esto , nos permite tener un control total de nuestro sitio web, y poder visualizarlo en cualquier momento.
 
 ---
-
-**Fecha:** 14 de marzo de 2025  
-**Materia:** Paradigmas de la Programación
-**Profesor:** M. I. Jose Carlos Gallegos Mariscal
-**Alumno:** Isis Vanesa Lopez Cisneros
