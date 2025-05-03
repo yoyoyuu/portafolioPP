@@ -8,7 +8,7 @@
 
 <html
   class="not-ready lg:text-base"
-  style="--bg:#faf8f1"
+  style="--bg:#f8f5d7"
   lang="en-us"
   dir="ltr"
 ><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
@@ -20,31 +20,85 @@
   />
 
   
-  <title>Practica2-My New Hugo Site</title>
+  <title>Practica 2: Python y los elementos básicos del lenguaje de programación-Blog de Isis</title>
 
   
   <meta name="theme-color" />
 
-  <meta name="description" content="" />
-  <meta name="author" content="My New Hugo Site" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+  <meta name="description" content="
+Introducción
+Análisis
+
+Identificadores
+Objetos
+Entornos y Espacios de Nombres
+Bloques (Indentación)
+Alcance (Scope)
+Administración de Memoria
+Expresiones
+Sentencias (Comandos)
+Secuencia
+Selección (Condicionales)
+Iteración (Bucles)
+Recursión
+Funciones y Métodos (Subprogramas)
+Tipos de Datos
+Programación Orientada a Objetos (OOP)
+Módulos e Importaciones
+Manejo de Errores
+
+
+Conclusión
+
+
+Introducción
+En este análisis, examinaremos un script de Python (biblioteca.py) que implementa un sistema básico de gestión de bibliotecas. Desglosaremos los elementos fundamentales del lenguaje Python tal como se utilizan en este script, identificando componentes clave como identificadores, objetos, espacios de nombres, bloques de código, alcance, administración de memoria (con un enfoque en las características de Python y la simulación incluida), estructuras de control, tipos de datos y principios de programación orientada a objetos. El objetivo es comprender cómo funciona el script y cómo aplica los conceptos del lenguaje Python." />
+  <meta name="author" content="Isis Vanesa Lopez Cisneros" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
   
   <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
 
-  
+  <link rel="preload" as="image" href="https://pbs.twimg.com/profile_images/1897109682898063360/biAElNY5_400x400.jpg" />
 
-  
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
 
-  <script
-    defer
-    src="http://localhost:1313/highlight.min.js"
-    onload="hljs.initHighlightingOnLoad();"
-  ></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script><script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
 
   
   <link
     rel="icon"
-    href="http://localhost:1313/favicon.ico"
+    href="https://imgs.search.brave.com/Lf8anUrkNC2wPF8vrkkSUnvuoDTekiYrWxMJbwhObxU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9zcGFya2xl/cy1lbW9qaS01MTJ4/NDkzLTB2a3loNDlo/LnBuZw"
   />
   <link
     rel="apple-touch-icon"
@@ -60,7 +114,7 @@
     <a
       class="-translate-y-[1px] text-2xl font-medium"
       href="http://localhost:1313/"
-      >My New Hugo Site</a
+      >Blog de Isis</a
     >
     <div
       class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
@@ -90,7 +144,7 @@
 
     
     const metaTheme = document.querySelector('meta[name="theme-color"]');
-    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const lightBg = '#f8f5d7'.replace(/"/g, '');
     const setDark = (isDark) => {
       metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
       htmlClass[isDark ? 'add' : 'remove']('dark');
@@ -120,25 +174,258 @@
 
   <div
     class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none dark:bg-black"
-  >
+  ><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/yoyoyuu"
+        target="_blank"
+        rel="me"
+      >github</a>
+    </nav>
   </div>
 </header>
 <main
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
     ><article>
   <header class="mb-14">
-    <h1 class="!my-0 pb-2.5">Practica2</h1><div class="text-xs antialiased opacity-60"><time>Feb 21, 2025</time></div></header>
+    <h1 class="!my-0 pb-2.5">Practica 2: Python y los elementos básicos del lenguaje de programación</h1><div class="text-xs antialiased opacity-60"><time>Feb 21, 2025</time></div></header>
 
-  <section></section>
+  <section><ol>
+<li><a href="#introducci%C3%B3n">Introducción</a></li>
+<li><a href="#an%C3%A1lisis">Análisis</a>
+<ol>
+<li><a href="#1-nombres-identificadores">Identificadores</a></li>
+<li><a href="#2-objetos">Objetos</a></li>
+<li><a href="#3-entornos-y-espacios-de-nombres">Entornos y Espacios de Nombres</a></li>
+<li><a href="#4-bloques-indentaci%C3%B3n">Bloques (Indentación)</a></li>
+<li><a href="#5-alcance-scope">Alcance (Scope)</a></li>
+<li><a href="#6-administraci%C3%B3n-de-memoria">Administración de Memoria</a></li>
+<li><a href="#7-expresiones">Expresiones</a></li>
+<li><a href="#8-sentencias-comandos">Sentencias (Comandos)</a></li>
+<li><a href="#9-secuencia">Secuencia</a></li>
+<li><a href="#10-selecci%C3%B3n-condicionales">Selección (Condicionales)</a></li>
+<li><a href="#11-iteraci%C3%B3n-bucles">Iteración (Bucles)</a></li>
+<li><a href="#12-recursi%C3%B3n">Recursión</a></li>
+<li><a href="#13-funciones-y-m%C3%A9todos-subprogramas">Funciones y Métodos (Subprogramas)</a></li>
+<li><a href="#14-tipos-de-datos">Tipos de Datos</a></li>
+<li><a href="#15-programaci%C3%B3n-orientada-a-objetos-oop">Programación Orientada a Objetos (OOP)</a></li>
+<li><a href="#16-m%C3%B3dulos-e-importaciones">Módulos e Importaciones</a></li>
+<li><a href="#17-manejo-de-errores">Manejo de Errores</a></li>
+</ol>
+</li>
+<li><a href="#conclusi%C3%B3n">Conclusión</a></li>
+</ol>
+<hr>
+<h2 id="introducción"><strong>Introducción</strong></h2>
+<p>En este análisis, examinaremos un script de Python (<code>biblioteca.py</code>) que implementa un sistema básico de gestión de bibliotecas. Desglosaremos los elementos fundamentales del lenguaje Python tal como se utilizan en este script, identificando componentes clave como identificadores, objetos, espacios de nombres, bloques de código, alcance, administración de memoria (con un enfoque en las características de Python y la simulación incluida), estructuras de control, tipos de datos y principios de programación orientada a objetos. El objetivo es comprender cómo funciona el script y cómo aplica los conceptos del lenguaje Python.</p>
+<hr>
+<h2 id="análisis"><strong>Análisis</strong></h2>
+<h3 id="1-nombres-identificadores"><strong>1. Nombres (Identificadores)</strong></h3>
+<p>Los identificadores son nombres utilizados para referirse a variables, funciones, clases, métodos, módulos y otros objetos en Python. Deben seguir las reglas de nomenclatura de Python (comenzar con una letra o guion bajo, seguido de letras, números o guiones bajos). En este script, algunos ejemplos son:</p>
+<ul>
+<li><strong>Nombres de Clases:</strong> <code>Genre</code>, <code>Book</code>, <code>DigitalBook</code>, <code>Member</code>, <code>Library</code>. (Convención: PascalCase)</li>
+<li><strong>Nombres de Funciones/Métodos:</strong> <code>__init__</code>, <code>__del__</code>, <code>to_dict</code>, <code>from_dict</code>, <code>add_book</code>, <code>display_books</code>, <code>main</code>. (Convención: snake_case)</li>
+<li><strong>Nombres de Variables/Atributos:</strong> <code>book_id</code>, <code>title</code>, <code>author</code>, <code>publication_year</code>, <code>genre</code>, <code>quantity</code>, <code>file_format</code>, <code>member_id</code>, <code>name</code>, <code>issued_books</code>, <code>library</code>, <code>choice</code>, <code>book</code>, <code>member</code>. (Convención: snake_case)</li>
+<li><strong>Nombres de Módulos:</strong> <code>json</code>, <code>memory_management</code>.</li>
+<li><strong>Atributos de Clase (Constantes):</strong> <code>Genre.FICTION</code>, <code>Genre.NON_FICTION</code>, etc. (Convención: UPPERCASE para constantes, aunque aquí son atributos de clase usados como tales).</li>
+</ul>
+<p>Estos identificadores son cruciales para la legibilidad y estructura del código.</p>
+<h3 id="2-objetos"><strong>2. Objetos</strong></h3>
+<p>En Python, <em>todo</em> es un objeto. Un objeto es una instancia de una clase (o tipo de dato) que tiene una identidad, un tipo y un valor (o estado). En este script:</p>
+<ul>
+<li><strong>Instancias de Clases Definidas por el Usuario:</strong>
+<ul>
+<li><code>Book(...)</code>, <code>DigitalBook(...)</code>: Objetos que representan libros físicos o digitales.</li>
+<li><code>Member(...)</code>: Objetos que representan a los miembros de la biblioteca.</li>
+<li><code>Library()</code>: Un objeto que contiene y gestiona las colecciones de libros y miembros.</li>
+</ul>
+</li>
+<li><strong>Instancias de Tipos Incorporados:</strong>
+<ul>
+<li><strong>Enteros (<code>int</code>):</strong> <code>book_id</code>, <code>publication_year</code>, <code>quantity</code>, <code>choice</code>.</li>
+<li><strong>Cadenas (<code>str</code>):</strong> <code>title</code>, <code>author</code>, <code>genre</code>, <code>file_format</code>, <code>name</code>, <code>&quot;library.json&quot;</code>.</li>
+<li><strong>Listas (<code>list</code>):</strong> <code>self.books</code>, <code>self.members</code>, <code>member.issued_books</code>, <code>Genre.all_genres()</code>.</li>
+<li><strong>Diccionarios (<code>dict</code>):</strong> El valor de retorno de los métodos <code>to_dict()</code>, <code>books_data</code>, <code>members_data</code>.</li>
+<li><strong>Booleanos (<code>bool</code>):</strong> El resultado de comparaciones como <code>book.id == book_id</code> o <code>is_digital</code>.</li>
+<li><strong><code>None</code>:</strong> El valor de retorno de funciones que no encuentran un objeto, como <code>find_book_by_id</code>.</li>
+</ul>
+</li>
+<li><strong>Otros Objetos:</strong> Clases mismas (<code>Book</code>, <code>Library</code>), funciones (<code>main</code>), métodos (<code>add_book</code>).</li>
+</ul>
+<p>Cada objeto ocupa un espacio en memoria y tiene métodos y atributos asociados a su tipo.</p>
+<h3 id="3-entornos-y-espacios-de-nombres"><strong>3. Entornos y Espacios de Nombres</strong></h3>
+<p>Python utiliza espacios de nombres (namespaces) para organizar los identificadores y evitar colisiones. Un espacio de nombres es un mapeo de nombres a objetos. Los entornos de ejecución gestionan estos espacios de nombres.</p>
+<ul>
+<li><strong>Espacio de Nombres Incorporado:</strong> Contiene funciones y excepciones predefinidas (<code>print</code>, <code>int</code>, <code>input</code>, <code>len</code>, <code>FileNotFoundError</code>).</li>
+<li><strong>Espacio de Nombres Global:</strong> A nivel de módulo (<code>biblioteca.py</code>). Contiene las definiciones de clases (<code>Book</code>, <code>Library</code>, etc.) y la función <code>main</code>. Las variables definidas fuera de cualquier función/clase estarían aquí (aunque no hay globales explícitas aparte de las importaciones en este script).</li>
+<li><strong>Espacio de Nombres Local:</strong> Dentro de una función o método. Por ejemplo, dentro de <code>add_book</code>, <code>book</code> es un nombre local (parámetro). Dentro de <code>main</code>, <code>library</code>, <code>choice</code>, <code>book_id</code>, etc., son locales a <code>main</code>.</li>
+</ul>
+<p>Python busca nombres siguiendo la regla <strong>LEGB</strong>: Local -&gt; Enclosing function locals -&gt; Global -&gt; Built-in.</p>
+<h3 id="4-bloques-indentación"><strong>4. Bloques (Indentación)</strong></h3>
+<p>A diferencia de C o Java que usan llaves <code>{ }</code>, Python utiliza la <strong>indentación</strong> (espacios o tabulaciones) para definir bloques de código. Esto se aplica a:</p>
+<ul>
+<li>Definiciones de clases (<code>class Library:</code>).</li>
+<li>Definiciones de funciones/métodos (<code>def add_book(self, book):</code>).</li>
+<li>Estructuras de control (<code>if</code>, <code>elif</code>, <code>else</code>, <code>for</code>, <code>while</code>, <code>try</code>, <code>except</code>, <code>with</code>).</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Ejemplo de bloque if/elif/else en main()</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> choice <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Bloque indentado para la opción 1</span>
+</span></span><span style="display:flex;"><span>    book_id <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Ingresa ID del libro: &#34;</span>))
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ... más código indentado</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> choice <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Bloque indentado para la opción 2</span>
+</span></span><span style="display:flex;"><span>    library<span style="color:#f92672">.</span>display_books()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Bloque indentado para la opción inválida</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Esta no es una opcion valida!!!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><p>La indentación coherente es sintácticamente obligatoria en Python.</p>
+<h3 id="5-alcance-scope"><strong>5. Alcance (Scope)</strong></h3>
+<p>El alcance determina la visibilidad de un identificador (dónde se puede acceder a él). Está directamente relacionado con los espacios de nombres y la regla LEGB.</p>
+<ul>
+<li><strong>Alcance Global:</strong> Los nombres definidos a nivel de módulo (clases <code>Book</code>, <code>Library</code>, función <code>main</code>) son accesibles globalmente <em>dentro</em> del módulo.</li>
+<li><strong>Alcance Local:</strong> Los nombres definidos dentro de una función/método son locales a esa función (ej: <code>book_id</code>, <code>title</code> dentro del <code>if choice == 1</code> en <code>main</code>). Los parámetros de funciones/métodos (<code>self</code>, <code>book</code> en <code>add_book</code>) también son locales.</li>
+<li><strong>Alcance de Instancia:</strong> Los atributos definidos con <code>self.</code> (ej: <code>self.books</code>, <code>self.title</code>) pertenecen a la instancia específica de la clase y son accesibles a través de <code>self</code> dentro de los métodos de instancia.</li>
+</ul>
+<h3 id="6-administración-de-memoria"><strong>6. Administración de Memoria</strong></h3>
+<p>Python gestiona la memoria de forma automática, lo cual difiere significativamente de la gestión manual en C.</p>
+<h4 id="memoria-automática-stack-y-heap-en-python"><strong>Memoria Automática (Stack y Heap en Python)</strong></h4>
+<ul>
+<li>Python utiliza principalmente la <strong>asignación en el heap</strong> para los objetos. Las variables en Python son referencias (similares a punteros, pero gestionadas) a estos objetos en el heap.</li>
+<li>Las referencias locales (variables dentro de funciones) y los marcos de llamada de funciones residen en la <strong>pila (stack)</strong>. Cuando una función termina, su marco de pila se destruye, eliminando las referencias locales.</li>
+<li><strong>Recolección de Basura (Garbage Collection):</strong> Python usa principalmente el <strong>conteo de referencias</strong>. Cuando el contador de referencias de un objeto llega a cero (ninguna variable se refiere a él), su memoria puede ser liberada. Python también tiene un <strong>recolector de basura cíclico</strong> para detectar y liberar objetos involucrados en ciclos de referencia.</li>
+</ul>
+<h4 id="simulación-de-gestión-manual"><strong>Simulación de Gestión Manual</strong></h4>
+<ul>
+<li>El script utiliza un módulo externo <code>memory_management</code> y llama a <code>memory_management.increment_heap_allocations(1)</code> en los <code>__init__</code> y <code>memory_management.increment_heap_deallocations(1)</code> en los <code>__del__</code>.</li>
+<li><strong>Importante:</strong> Esto es una <strong>simulación</strong> para fines educativos o de demostración. <strong>No representa la gestión de memoria real y manual de Python.</strong></li>
+<li>El método <code>__del__</code> (destructor) en Python <strong>no es determinista</strong>. No se garantiza cuándo (o incluso si) será llamado por el recolector de basura. No debe usarse para la gestión de recursos críticos que requieren liberación inmediata (para eso se usan contextos <code>with</code> o <code>try...finally</code>). Su uso aquí para rastrear deallocaciones es conceptual.</li>
+</ul>
+<p>En resumen, Python abstrae la gestión de memoria del programador, pero el script añade un seguimiento explícito simulado.</p>
+<h3 id="7-expresiones"><strong>7. Expresiones</strong></h3>
+<p>Las expresiones son combinaciones de valores, variables, operadores y llamadas a funciones/métodos que se evalúan para producir un valor. Ejemplos:</p>
+<ul>
+<li><strong>Aritméticas:</strong> <code>book.quantity - 1</code>, <code>len(member.issued_books)</code>.</li>
+<li><strong>Comparación:</strong> <code>book.id == book_id</code>, <code>book.quantity &gt; 0</code>, <code>&quot;file_format&quot; in data</code>.</li>
+<li><strong>Lógicas:</strong> <code>book and member and book.quantity &gt; 0</code>.</li>
+<li><strong>Acceso a Atributos:</strong> <code>book.title</code>, <code>self.members</code>.</li>
+<li><strong>Llamadas a Métodos/Funciones:</strong> <code>book.to_dict()</code>, <code>int(input(...))</code>, <code>json.load(file)</code>.</li>
+<li><strong>Creación de Literales:</strong> <code>&quot;Ficcion&quot;</code>, <code>101</code>, <code>[]</code>, <code>{}</code>.</li>
+<li><strong>Indexación/Slicing (no explícito aquí, pero común en listas/strings).</strong></li>
+<li><strong>Comprensión de Listas:</strong> <code>[book.to_dict() for book in self.books]</code></li>
+</ul>
+<h3 id="8-sentencias-comandos"><strong>8. Sentencias (Comandos)</strong></h3>
+<p>Las sentencias son unidades completas de ejecución. Realizan una acción. Ejemplos:</p>
+<ul>
+<li><strong>Asignación:</strong> <code>self.id = book_id</code>, <code>book = Book(...)</code>.</li>
+<li><strong>Importación:</strong> <code>import json</code>.</li>
+<li><strong>Definición de Clase:</strong> <code>class Book:</code></li>
+<li><strong>Definición de Función/Método:</strong> <code>def add_book(self, book):</code></li>
+<li><strong>Llamada a Procedimiento (función/método sin retorno relevante usado):</strong> <code>print(...)</code>, <code>self.books.append(book)</code>, <code>memory_management.display_memory_usage()</code>.</li>
+<li><strong>Control de Flujo:</strong> <code>if</code>, <code>for</code>, <code>while</code>, <code>break</code>, <code>return</code>.</li>
+<li><strong>Manejo de Excepciones:</strong> <code>try...except</code>.</li>
+<li><strong>Gestión de Contexto:</strong> <code>with open(...) as file:</code>.</li>
+</ul>
+<h3 id="9-secuencia"><strong>9. Secuencia</strong></h3>
+<p>El flujo de ejecución del programa es secuencial por defecto. Las sentencias se ejecutan una tras otra en el orden en que aparecen en el script, a menos que una estructura de control (condicional, bucle, llamada a función, excepción) altere este flujo.</p>
+<h3 id="10-selección-condicionales"><strong>10. Selección (Condicionales)</strong></h3>
+<p>Se utilizan <code>if</code>, <code>elif</code> (else if) y <code>else</code> para ejecutar bloques de código basados en si una condición es verdadera o falsa.</p>
+<ul>
+<li>En <code>main</code>: El <code>if/elif/else</code> principal para manejar las opciones del menú.</li>
+<li>En <code>issue_book</code> y <code>return_book</code>: <code>if book and member and ...</code> para verificar si el libro y el miembro existen y cumplen las condiciones.</li>
+<li>En <code>load_library_from_file</code>: <code>if &quot;file_format&quot; in data</code> para decidir si crear un <code>Book</code> o un <code>DigitalBook</code>.</li>
+<li>En <code>display_books</code>: <code>if not self.books:</code> para manejar el caso de biblioteca vacía.</li>
+</ul>
+<p>También se usa una expresión condicional (ternaria) en <code>main</code>:
+<code>is_digital = input(&quot;Es un libro digital? (s/n): &quot;).lower() == 's'</code></p>
+<h3 id="11-iteración-bucles"><strong>11. Iteración (Bucles)</strong></h3>
+<p>Los bucles permiten repetir bloques de código.</p>
+<ul>
+<li><strong><code>while</code> loop:</strong> En <code>main</code>, el <code>while True:</code> crea el bucle principal del menú, que se ejecuta hasta que <code>choice == 8</code> causa un <code>break</code>.</li>
+<li><strong><code>for</code> loop:</strong>
+<ul>
+<li>En <code>display_books</code>, <code>display_members</code>, <code>find_book_by_id</code>, <code>find_member_by_id</code>: Se itera sobre las listas <code>self.books</code> o <code>self.members</code>.</li>
+<li>En <code>display_members</code> y <code>search_member</code>: Se itera sobre <code>member.issued_books</code>.</li>
+<li>En <code>save_library_to_file</code> y <code>save_members_to_file</code>: Se usan comprensiones de lista (que implican iteración) para crear las listas de diccionarios.</li>
+<li>En <code>load_library_from_file</code> y <code>load_members_from_file</code>: Se usan comprensiones de lista para crear los objetos <code>Book</code>/<code>Member</code> a partir de los datos cargados.</li>
+</ul>
+</li>
+</ul>
+<h3 id="12-recursión"><strong>12. Recursión</strong></h3>
+<p>La recursión ocurre cuando una función se llama a sí misma. Este script <strong>no utiliza recursión</strong> en su lógica principal. Todas las iteraciones se realizan mediante bucles <code>for</code> y <code>while</code>. Python soporta recursión, pero tiene un límite de profundidad de recursión para prevenir desbordamientos de pila.</p>
+<h3 id="13-funciones-y-métodos-subprogramas"><strong>13. Funciones y Métodos (Subprogramas)</strong></h3>
+<p>El código está modularizado usando funciones y métodos, lo que mejora la organización, reutilización y legibilidad.</p>
+<ul>
+<li><strong>Función:</strong> <code>main()</code> es la función principal que orquesta la interacción con el usuario y la biblioteca.</li>
+<li><strong>Métodos de Instancia:</strong> La mayoría de los métodos dentro de las clases (<code>__init__</code>, <code>to_dict</code>, <code>add_book</code>, <code>issue_book</code>, etc.). Operan sobre los datos de una instancia específica (<code>self</code>).</li>
+<li><strong>Métodos Estáticos (<code>@staticmethod</code>):</strong> <code>Book.from_dict</code>, <code>DigitalBook.from_dict</code>, <code>Member.from_dict</code>. No están ligados a una instancia (<code>self</code>) ni a la clase (<code>cls</code>). Se usan como funciones de utilidad relacionadas con la clase, a menudo para crear instancias desde otros formatos de datos.</li>
+<li><strong>Métodos de Clase (<code>@classmethod</code>):</strong> <code>Genre.all_genres</code>. Están ligados a la clase (<code>cls</code>) en lugar de a la instancia (<code>self</code>). Útil para operaciones que involucran a la clase misma.</li>
+<li><strong>Método Especial (<code>__init__</code>, <code>__del__</code>):</strong> Métodos con doble guion bajo tienen significados especiales en Python (constructor, destructor en este caso).</li>
+</ul>
+<h3 id="14-tipos-de-datos"><strong>14. Tipos de Datos</strong></h3>
+<p>Python es un lenguaje de <strong>tipado dinámico</strong>, lo que significa que el tipo de una variable se determina en tiempo de ejecución. Sin embargo, los <em>valores</em> sí tienen tipos definidos.</p>
+<ul>
+<li><strong>Tipos Incorporados Usados:</strong>
+<ul>
+<li><code>int</code>: Para identificadores numéricos, años, cantidades.</li>
+<li><code>str</code>: Para títulos, nombres, autores, géneros, formatos de archivo, nombres de archivo.</li>
+<li><code>list</code>: Para almacenar colecciones de libros, miembros y libros prestados.</li>
+<li><code>dict</code>: Para la representación serializada de objetos (en JSON).</li>
+<li><code>bool</code>: Para resultados de comparaciones y flags (<code>is_digital</code>).</li>
+<li><code>NoneType</code> (el tipo del valor <code>None</code>): Usado para indicar la ausencia de un valor (ej., libro no encontrado).</li>
+</ul>
+</li>
+<li><strong>Tipos Definidos por el Usuario (Clases):</strong>
+<ul>
+<li><code>Genre</code>: Actúa como un enumerador (aunque implementado con atributos de clase).</li>
+<li><code>Book</code>: Define la estructura y comportamiento de un libro.</li>
+<li><code>DigitalBook</code>: Define un tipo especializado de <code>Book</code>.</li>
+<li><code>Member</code>: Define la estructura y comportamiento de un miembro.</li>
+<li><code>Library</code>: Define la estructura y comportamiento de la biblioteca como un todo.</li>
+</ul>
+</li>
+</ul>
+<h3 id="15-programación-orientada-a-objetos-oop"><strong>15. Programación Orientada a Objetos (OOP)</strong></h3>
+<p>El script está fuertemente basado en principios OOP:</p>
+<ul>
+<li><strong>Abstracción:</strong> Las clases <code>Book</code>, <code>Member</code>, <code>Library</code> modelan entidades del mundo real (o del dominio del problema), ocultando los detalles internos y exponiendo interfaces (métodos).</li>
+<li><strong>Encapsulamiento:</strong> Los datos (atributos como <code>title</code>, <code>author</code>, <code>issued_books</code>) y las operaciones sobre esos datos (métodos como <code>add_book</code>, <code>issue_book</code>) están agrupados dentro de las clases.</li>
+<li><strong>Herencia:</strong> <code>DigitalBook</code> hereda de <code>Book</code>, reutilizando la funcionalidad de <code>Book</code> y añadiendo/modificando la suya propia (atributo <code>file_format</code>, método <code>to_dict</code> sobreescrito). Se usa <code>super().__init__(...)</code> y <code>super().to_dict()</code> para invocar la implementación de la clase padre.</li>
+<li><strong>Polimorfismo:</strong> Aunque no se explota extensamente, el método <code>to_dict</code> es un ejemplo. La forma en que un objeto se convierte a diccionario depende de si es un <code>Book</code> o un <code>DigitalBook</code>. La carga desde JSON (<code>load_library_from_file</code>) también demuestra polimorfismo al crear el tipo correcto de objeto (<code>Book</code> o <code>DigitalBook</code>) basado en los datos.</li>
+</ul>
+<h3 id="16-módulos-e-importaciones"><strong>16. Módulos e Importaciones</strong></h3>
+<p>El script utiliza módulos para organizar el código y reutilizar funcionalidades:</p>
+<ul>
+<li><strong><code>import json</code>:</strong> Importa el módulo estándar de Python para trabajar con datos en formato JSON (serializar/deserializar objetos <code>Book</code> y <code>Member</code>).</li>
+<li><strong><code>from memory_management import memory_management</code>:</strong> Importa un objeto específico (<code>memory_management</code>) desde un módulo local (presumiblemente <code>memory_management.py</code>). Esto permite usar <code>memory_management.increment_heap_allocations(...)</code> directamente.</li>
+</ul>
+<h3 id="17-manejo-de-errores"><strong>17. Manejo de Errores</strong></h3>
+<p>Se implementa manejo básico de errores usando bloques <code>try...except</code>:</p>
+<ul>
+<li>En <code>load_library_from_file</code> y <code>load_members_from_file</code>: Se usa <code>try...except FileNotFoundError</code> para manejar el caso en que los archivos <code>library.json</code> o <code>members.json</code> no existan al iniciar el programa, evitando que el programa falle y mostrando un mensaje informativo.</li>
+<li>La conversión de input a entero (<code>int(input(...))</code>) podría fallar si el usuario ingresa texto no numérico. Este error <strong>no</strong> se maneja explícitamente con <code>try...except</code>, por lo que el programa se detendría con un <code>ValueError</code> en ese caso.</li>
+</ul>
+<hr>
+<h2 id="conclusión"><strong>Conclusión</strong></h2>
+<p>El script <code>biblioteca.py</code> demuestra eficazmente muchos conceptos fundamentales del lenguaje Python. Utiliza la programación orientada a objetos para modelar el dominio del problema (libros, miembros, biblioteca) con clases, herencia y encapsulamiento. Emplea tipos de datos incorporados (listas, diccionarios, strings, ints) y definidos por el usuario (clases). Gestiona el flujo del programa mediante estructuras de control estándar (bucles, condicionales). La administración de memoria es manejada automáticamente por Python, aunque el script incluye una capa de <em>simulación</em> de seguimiento de memoria con fines demostrativos, destacando una diferencia clave con lenguajes como C. El uso de módulos (<code>json</code>) y el manejo básico de excepciones (<code>try...except</code>) también son evidentes. En general, el script es un buen ejemplo de una aplicación de consola estructurada en Python.</p>
+<hr>
+</section>
 
   <nav
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
   ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/posts/practica3/"
       ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Practica3</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="http://localhost:1313/posts/practica1/"
+      ><span>Practica1: elementos básicos de los lenguajes de programación</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     ></nav></article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >
-  <div class="mr-auto">&copy;2025<a class="link" href="http://localhost:1313/">My New Hugo Site</a></div>
+  <div class="mr-auto">&copy;2025<a class="link" href="http://localhost:1313/">Blog de Isis</a></div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
     >powered by hugo️️</a
   >️

@@ -6,8 +6,22 @@
     <description>Recent content on Blog de Isis</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Feb 2025 10:20:06 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 21 Feb 2025 10:20:24 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Practica3</title>
+      <link>http://localhost:1313/posts/practica3/</link>
+      <pubDate>Fri, 21 Feb 2025 10:20:24 -0800</pubDate>
+      <guid>http://localhost:1313/posts/practica3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Practica 2: Python y los elementos básicos del lenguaje de programación</title>
+      <link>http://localhost:1313/posts/practica2/</link>
+      <pubDate>Fri, 21 Feb 2025 10:20:15 -0800</pubDate>
+      <guid>http://localhost:1313/posts/practica2/</guid>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#introducci%C3%B3n&#34;&gt;Introducción&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#an%C3%A1lisis&#34;&gt;Análisis&lt;/a&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#1-nombres-identificadores&#34;&gt;Identificadores&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2-objetos&#34;&gt;Objetos&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#3-entornos-y-espacios-de-nombres&#34;&gt;Entornos y Espacios de Nombres&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#4-bloques-indentaci%C3%B3n&#34;&gt;Bloques (Indentación)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#5-alcance-scope&#34;&gt;Alcance (Scope)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#6-administraci%C3%B3n-de-memoria&#34;&gt;Administración de Memoria&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#7-expresiones&#34;&gt;Expresiones&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#8-sentencias-comandos&#34;&gt;Sentencias (Comandos)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#9-secuencia&#34;&gt;Secuencia&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#10-selecci%C3%B3n-condicionales&#34;&gt;Selección (Condicionales)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#11-iteraci%C3%B3n-bucles&#34;&gt;Iteración (Bucles)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#12-recursi%C3%B3n&#34;&gt;Recursión&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#13-funciones-y-m%C3%A9todos-subprogramas&#34;&gt;Funciones y Métodos (Subprogramas)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#14-tipos-de-datos&#34;&gt;Tipos de Datos&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#15-programaci%C3%B3n-orientada-a-objetos-oop&#34;&gt;Programación Orientada a Objetos (OOP)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#16-m%C3%B3dulos-e-importaciones&#34;&gt;Módulos e Importaciones&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#17-manejo-de-errores&#34;&gt;Manejo de Errores&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#conclusi%C3%B3n&#34;&gt;Conclusión&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;introducción&#34;&gt;&lt;strong&gt;Introducción&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;En este análisis, examinaremos un script de Python (&lt;code&gt;biblioteca.py&lt;/code&gt;) que implementa un sistema básico de gestión de bibliotecas. Desglosaremos los elementos fundamentales del lenguaje Python tal como se utilizan en este script, identificando componentes clave como identificadores, objetos, espacios de nombres, bloques de código, alcance, administración de memoria (con un enfoque en las características de Python y la simulación incluida), estructuras de control, tipos de datos y principios de programación orientada a objetos. El objetivo es comprender cómo funciona el script y cómo aplica los conceptos del lenguaje Python.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Practica1: elementos básicos de los lenguajes de programación</title>
       <link>http://localhost:1313/posts/practica1/</link>
