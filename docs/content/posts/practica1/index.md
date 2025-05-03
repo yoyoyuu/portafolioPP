@@ -1,7 +1,7 @@
 +++
-date = '2025-02-21T10:20:06-08:00'
+date = '2025-03-15T10:20:06-08:00'
 draft = false
-title = 'Practica1: elementos básicos de los lenguajes de programación'
+title = 'Practica 1: elementos básicos de los lenguajes de programación'
 +++
 
 1. [Introducción](#introducción)
