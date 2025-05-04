@@ -20,7 +20,7 @@ title = 'Practica 2: Python y los elementos básicos del lenguaje de programaci�
     12. [Recursión](#12-recursión)
     13. [Funciones y Métodos (Subprogramas)](#13-funciones-y-métodos-subprogramas)
     14. [Tipos de Datos](#14-tipos-de-datos)
-    15. [Programación Orientada a Objetos (OOP)](#15-programación-orientada-a-objetos-oop)
+    15. [Programación Orientada a Objetos (POO)](#15-programación-orientada-a-objetos-poo)
     16. [Módulos e Importaciones](#16-módulos-e-importaciones)
     17. [Manejo de Errores](#17-manejo-de-errores)
 3. [Conclusión](#conclusión)
