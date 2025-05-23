@@ -1,7 +1,7 @@
 +++
-date = '2025-02-21T10:20:24-08:00'
-draft = true
-title = 'Reporte de Práctica: Aplicación TODO en Haskell'
+date = '2025-05-22T10:20:24-08:00'
+draft = false
+title = 'Práctica 3: Aplicación TODO en Haskell'
 +++
 
 ## Tabla de Contenido
