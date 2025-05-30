@@ -1,7 +1,7 @@
 +++
 date = '2025-05-27T20:20:56-07:00'
 draft = false
-title = 'Practica4'
+title = 'Práctica 4: introducción a Prolog'
 +++
 
 ## Tabla de contenido
